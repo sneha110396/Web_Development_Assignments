@@ -1,0 +1,61 @@
+:root {
+    --light-mint: #a8d5ba;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: helvetica;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+li {
+    list-style: circle;
+    cursor: pointer;
+    transition: text-decoration 0.3s;
+}
+
+.list {
+    list-style: square;
+}
+
+.light-theme {
+    --bg: var(--light-mint);
+    --fontColor: var(--black);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--light-mint);
+}
+
+#task-input {
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#task-date {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#add-task-btn {
+    padding: 5px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    transition: background-color 0.3s;
+}
+
+#add-task-btn:hover {
+    background-color: var(--light-mint);
+}
+
+.completed {
+    text-decoration: line-through;
+}
